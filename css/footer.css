@@ -1,0 +1,74 @@
+footer {
+    background-color: var(--red2);
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.iconcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.iconcontainer a {
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* Footer widget suscription */
+
+.subscription {
+    /*display: block;
+    margin: 2.5rem;
+    width: 60%;
+    max-width: 400px;
+    min-width: 120px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background-size: 100% 1em;
+    margin-block-start: 20px;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form .form {
+    display: flex;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    /*border-radius: 10px;*/
+    margin-block-start: 12px;
+}
+
+input[type=text] {
+    margin-left: 10px;
+    background-color: var(--white);
+    font-weight: 700;
+    border-color: transparent;
+    padding: 5px;
+}
+
+input[type=submit] {
+    background-color: var(--grey1);
+    font-weight: 700;
+    border-color: transparent;
+    padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .subscription {
+        flex-wrap: wrap;
+    }
+}

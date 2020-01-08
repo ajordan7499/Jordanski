@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+body {
+    background: url("../img/skiers-snowboarders-seamless-pattern_1015-516\ bw.jpg");
+}
+
+.container {
+    max-width: 120rem !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    background-color: var(--whitebg) !important;
+}
+
+
+
+.container-content {
+    padding: 0 10%;
+    padding-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+
+:root{
+    --black:#000;
+    --whitebg:rgba(255, 255, 255, .75);
+    --grey1:#c4c4c4;
+    --grey2:#666;
+    --white:rgba(255, 255, 255);
+    --white2:#ddd;
+    --red: #e20808;
+    --red2:hsl(348, 83%, 47%);
+
+}

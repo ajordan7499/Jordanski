@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jordanski</title>
+    <!--<link rel="stylesheet" href="css/reset.css" />-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/ski.css" />
+
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+</head>
+
+<body>
+    <header id="menu">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container fixed">
+            <h1 class="brand mobile-brand" id="mobile-logo"><a href="index.html">Jordan<span>Ski</span></a></h1>
+            <nav>
+                <h1 class="brand"><a href="index.html">Jordan<span>Ski</span></a></h1>
+                <ul>
+                    <li><a class="item" href="#about">Inicio</a></li>
+                    <li><a class="item" href="#about">Nosotros</a></li>
+                    <li><a class="item" href="#brands">Marcas</a></li>
+                    <li><a class="item" href="#skis">Skis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="container-content about">
+                <div class="text">
+                    <h1>Sobre Nosotros</h1>
+                </div>
+                <div class="text">
+                    <p>Estamos localizados en la Cerdanya para ofrecerte los mejores esquís al mejor precio. Trabajamos solo con las mejores marcas del mercado.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae odit sunt, iusto saepe sapiente vitae, quibusdam assumenda laborum dignissimos voluptas qui culpa magnam nihil aperiam cupiditate non quis tempora.</p>
+                </div>
+                <div class="text" id="brands">
+                    <h1>Nuestras marcas</h1>
+                </div>
+                <div class="text">
+                    <p>Estamos localizados en la Cerdanya para ofrecerte los mejores esquís al mejor precio. Trabajamos solo con las mejores marcas del mercado.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corrupti illo facere maiores, enim quasi debitis quam aut minus? Rerum iusto inventore saepe dolorum eligendi rem consequuntur amet doloribus. Esse.</p>
+                </div>
+                <div class="brandcontainer">
+                    <img src="img/atomic.jpg">
+                    <img src="img/fischer.jpg">
+                    <img src="img/head.jpg">
+                    <img src="img/rosignol.jpg">
+                    <img src="img/salomon.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skis">
+        <div class="container">
+            <div class="container-content">
+                <div class="text">
+                    <h1>Skis</h1>
+                </div>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">TODOS</button>
+                    <button class="btn" onclick="filterSelection('atomic')">Atomic</button>
+                    <button class="btn" onclick="filterSelection('head')"> Head</button>
+                    <button class="btn" onclick="filterSelection('rossignol')"> Rossignol</button>
+                    <button class="btn" onclick="filterSelection('fischer')"> Fischer</button>
+                    <button class="btn" onclick="filterSelection('salomon')"> Salomon</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="products">
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-backland-w-85.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Backland W 85</h4>
+                                <p>Excelente para el esquiador de nivel intermedio a experto</p>
+                            </div>
+                            <div class="price">
+                                <span>400€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-cloud-9-l-10-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Cloud 91 GW</h4>
+                                <p>Apropiado para esquiadores de nivel intermedio</p>
+
+                            </div>
+                            <div class="price">
+                                <span>355€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-redster-j2-130-150-l-l-6-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Redster J2 116GW</h4>
+                                <p>Excelente para esquiadores profesionales o semiprofesionales</p>
+                            </div>
+                            <div class="price">
+                                <span>440€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-vantage-82-ti-ft-e-f-12-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Vantage 82 TI</h4>
+                                <p>Excelente para esquiadores intermedios</p>
+                            </div>
+                            <div class="price">
+                                <span>430€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-vantage-x-100-120-jts-l-c-5-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Vantage X 100 JTS</h4>
+                                <p>Excelente para esquiadores intermedios</p>
+                            </div>
+                            <div class="price">
+                                <span>380€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column atomic col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/atomic-vantage-x-80-cti-ft-12-gw-f80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Atomic Vantage X 80 CTI</h4>
+                                <p>Excelente para esquiadores intermedios</p>
+                            </div>
+                            <div class="price">
+                                <span>340€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fischer col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/fischer-pro-mt-77-tpr-rs-10-pr.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Fischer Pro MT 77</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>420€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fischer col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/fischer-pro-mt-86-ti-attack-13-at-power-brake-95.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Fischer Pro MT 86</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>430€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fischer col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/fischer-ranger-fr.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Fischer Ranger FR</h4>
+                                <p>Skis semiprofesionales de altas prestaciones</p>
+                            </div>
+                            <div class="price">
+                                <span>450€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fischer col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/fischer-rc-one-72-mf-rsx-z12-pr.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Fischer rc one 72 mf</h4>
+                                <p>Esquís freeride excelentes para nieves virgenes</p>
+                            </div>
+                            <div class="price">
+                                <span>350€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fischer col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/fischer-rc4-the-curv-cb-rc4-z13-ff.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Fischer rc4 the curv</h4>
+                                <p>Esquís freeride de última generación con un excelente agarre</p>
+                            </div>
+                            <div class="price">
+                                <span>450€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-absolut-joy-slr-joy-9-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head Absolut Joy slr</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>300€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-pure-joy-slr-joy-9-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head Pure Joy slr</h4>
+                                <p>Apropiado para esquiadores principiantes</p>
+                            </div>
+                            <div class="price">
+                                <span>340€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-supershape-i.magnum-sw-prd-12-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head Supershape I mg</h4>
+                                <p>Esquís Semiprofesionales para uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>540€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-supershape-i.rally-sw-prd-12-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head Supershape I rally</h4>
+                                <p>Esquís Semiprofesionales para uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>400€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-supershape-team-hrs-junior.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head Supershape team</h4>
+                                <p>Esquís de competición junior high quality</p>
+                            </div>
+                            <div class="price">
+                                <span>340€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-total-joy-slr-joy-11-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head total Joy slr</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>390€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column head col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/head-v-shape-v6-prd-12-gw.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Head v shape</h4>
+                                <p>Esquís V shape para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>378€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-e-qst-lux-c5-gw-j75.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon e gst</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>399€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-h-qst-lux-xs-c5-sr-j7.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon h gst</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>345€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-s-race-l6-gw-j2-80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon s race</h4>
+                                <p>Esquís de competición de alto rendimiento</p>
+                            </div>
+                            <div class="price">
+                                <span>410€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-snowscape-7-16-17.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon snowscape</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>388€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-w-max-10-m-xt12.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon w max</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>434€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-x-max-x8-mercury-11.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon x max</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>400€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column salomon col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-x-max-x8-z12-walk-f80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon x max walk</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>350€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/salomon-x-max-x8-z12-walk-f80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Salomon x max walk</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>422€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-experience-84-ai-nx-12-konect-gw-b90.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol exp 84 ai</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>404€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-fun-girl-kid-x-4-b76.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol fun girl kid</h4>
+                                <p>Esquís infantiles fun girl kid x4 bt6, uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>410€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-hero-elite-st-ti-konect-spx-12-konect-gw-b80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol hero elite</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>423€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-hero-junior-xpress-7-b83.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol hero junior</h4>
+                                <p>Apropiado para esquiadores junior de nivel intermedio</p>
+                            </div>
+                            <div class="price">
+                                <span>365€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-nova-2-xpress-10-b83.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol nova 2</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>430€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-pursuit-300-xpress-2-xpress-11-b83.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol pursuit 300</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>421€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column rossignol col-lg-2 col-md-4 col-sm-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="img/rossignol-react-r8-ti-nx-12-konect-gw-b80.jpg" alt="Skis" style="width:100%">
+                            </div>
+                            <div class="content-body">
+                                <h4>Rossignol react r8</h4>
+                                <p>Apropiado para esquiadores intermedio de uso regular</p>
+                            </div>
+                            <div class="price">
+                                <span>460€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="subscription col-lg-12">
+
+            <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+                <div class="title">
+                    <h2>Subscríbete para recibir nuestras ofertas</h2>
+                </div>
+
+                <!--<p>Entérate de las mejores promociones</p>-->
+                <div class="form">
+                    <input type="text" name="email" style="width: 95%;" placeholder="Enter your email address" value="" id="subscribe-field">
+                    <input type="submit" value="Suscríbete">
+                </div>
+            </form>
+            <div class="social">
+                <div class="title">
+                    <h2>Síguenos</h2>
+                </div>
+                <div class="iconcontainer">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alejandr0j0rdan/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/gallery.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

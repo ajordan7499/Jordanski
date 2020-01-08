@@ -1,0 +1,38 @@
+.about {
+    padding-top: 2%;
+}
+
+.text {
+    align-content: center;
+    padding: 20px 0;
+}
+
+.text h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.text p {
+    font-size: 15px;
+}
+
+.brandcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    #about {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .brandcontainer {
+        flex-direction: column;
+        margin: 0 30%;
+    }
+}

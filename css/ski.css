@@ -1,0 +1,93 @@
+#myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.column {
+    padding: 8px;
+    display: none;
+    border: 1px solid var(--grey1);
+    background-color: var(--white);
+    margin: 5px;
+    flex: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.content-body h4,
+.content-body p,
+.price span {
+    display: flex;
+    justify-content: center;
+}
+
+.content-body h4 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.content-body p {
+    display: none;
+}
+
+.price span {
+    margin-top: 5px;
+    font-size: 30px;
+    color: var(--red)
+}
+
+.show {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--white);
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover {
+    background-color: var(--white2);
+}
+
+.btn.active {
+    background-color: var(--grey2);
+    color: var(--white);
+}
+
+.row {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media all and (max-width: 700px) {
+    .content-body h4 {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
